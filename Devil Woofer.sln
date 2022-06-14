@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devil Woofer", "Devil Woofer\Devil Woofer.csproj", "{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

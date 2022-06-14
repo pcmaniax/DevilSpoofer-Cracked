@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF47C5A5-4E99-40E7-A1D2-3C006264BC5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Devil Woofer</RootNamespace>
+    <AssemblyName>Devil Woofer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Devil Woofer.ico</ApplicationIcon>
+    <StartupObject>f</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Siticone.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="a.cs" />
+    <Compile Include="b.cs" />
+    <Compile Include="c.cs" />
+    <Compile Include="d.cs" />
+    <Compile Include="e.cs" />
+    <Compile Include="f.cs" />
+    <Compile Include="g.cs" />
+    <Compile Include="h.cs" />
+    <Compile Include="i.cs" />
+    <Compile Include="LeanDevelopment\Properties\Resources.cs" />
+    <Compile Include="LeanDevelopment\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Lean\Addons\DiscordRpc.cs" />
+    <Compile Include="Lean\Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lean\Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lean\Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lean\Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lean\Resources\api.cs" />
+    <Compile Include="Lean\Resources\encryption.cs" />
+    <Compile Include="Lean\Resources\json_wrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura.circularprogressbar.dll.compressed" />
+    <EmbeddedResource Include="costura.costura.dll.compressed" />
+    <EmbeddedResource Include="costura.costura.pdb.compressed" />
+    <EmbeddedResource Include="costura.metadata" />
+    <EmbeddedResource Include="costura.metroframework.design.dll.compressed" />
+    <EmbeddedResource Include="costura.metroframework.dll.compressed" />
+    <EmbeddedResource Include="costura.metroframework.fonts.dll.compressed" />
+    <EmbeddedResource Include="costura.newtonsoft.json.dll.compressed" />
+    <EmbeddedResource Include="costura.proxyclient.dll.compressed" />
+    <EmbeddedResource Include="costura.siticone.ui.dll.compressed" />
+    <EmbeddedResource Include="costura.system.diagnostics.diagnosticsource.dll.compressed" />
+    <EmbeddedResource Include="costura.winformanimation.dll.compressed" />
+    <EmbeddedResource Include="defA" />
+    <EmbeddedResource Include="LeanDevelopment\Properties\Resources.resources" />
+    <EmbeddedResource Include="Lean\Forms\Login.resources" />
+    <EmbeddedResource Include="Lean\Forms\Main.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="LeanDevelopment\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
